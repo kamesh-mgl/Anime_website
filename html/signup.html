@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniStream - Sign Up</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+
+    <div class="signup-page d-flex align-items-center justify-content-center min-vh-100">
+        <div class="signup-container">
+            <div class="text-center mb-1 mt-0">
+                <a id="logo" href="../index.html" class="logo-link">
+                    <img src="../Assets/only_logo.png" alt="AniStream Logo">
+                </a>
+            </div>
+            <h2 class="text-center mb-4 signup-title">Create Your AniStream Account</h2>
+
+            <form id="signupForm">
+                <div class="">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" required>
+                    <div id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Choose a username" required>
+                    <div id="usernameFeedback" class="invalid-feedback"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                        <button class="btn btn-outline-secondary toggle-password" type="button" id="togglePassword">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div id="passwordFeedback" class="invalid-feedback"></div>
+                </div>
+                <div class="mb-4">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                        <button class="btn btn-outline-secondary toggle-password" type="button" id="toggleConfirmPassword">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div id="confirmPasswordFeedback" class="invalid-feedback"></div>
+                </div>
+
+                <div class="d-grid mb-3 text-center">
+                    <button type="submit" class="btn btn-primary-custom btn-lg">Sign Up</button>
+                </div>
+
+                <!-- <p class="text-center text-muted small">
+                    By clicking "Sign Up", you agree to AniStream's <a href="#" class="orange-link">Terms of Service</a> and <a href="#" class="orange-link">Privacy Policy</a>.
+                </p> -->
+
+                <hr class="my-1 form-divider">
+
+                <p class="text-center text-light mb-5">
+                    Already have an account? <a href="./login.html" class="orange-link">Log in here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/signup.js"></script>
+</body>
+</html>

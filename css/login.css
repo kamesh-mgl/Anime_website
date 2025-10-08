@@ -1,0 +1,69 @@
+/* =======================
+   10. Login Page Specific Styles (NEW)
+   ======================= */
+
+.login-page {
+    /* Reuses background from signup to maintain consistency */
+    background-color: #1a1a1e;
+    background-image: url('https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/323c82294348b6937f5e3532d856b3e8.jpe');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Reuses the overlay for background image from signup */
+.login-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.login-container {
+    background-color: #1e1f24; /* Same as signup container */
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Checkbox styling */
+.form-check-input:checked {
+    background-color: #f47521;
+    border-color: #f47521;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(244, 117, 33, 0.25);
+    border-color: #f47521;
+}
+
+.form-check-label {
+    color: #e0e0e0;
+}
+
+/* Reuse .form-label, .form-control, .toggle-password, .btn-primary-custom,
+   .form-divider, .orange-link from previous styles. */
+
+/* Adjust for smaller screens */
+@media (max-width: 576px) {
+    .login-container {
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .login-title {
+        font-size: 1.75rem;
+    }
+}

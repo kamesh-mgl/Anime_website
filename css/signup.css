@@ -1,0 +1,158 @@
+/* =======================
+   9. Sign Up Page Specific Styles (NEW)
+   ======================= */
+
+.signup-page {
+    background-color: #1a1a1e; /* Slightly different dark background for the page */
+    background-image: url('https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/323c82294348b6937f5e3532d856b3e8.jpe'); /* Reusing an anime background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1; /* Ensure overlay works */
+    margin-top: 0px;
+    
+}
+
+/* Overlay for the background image to make content readable */
+.signup-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: -1; /* Behind the content */
+}
+
+
+.signup-container {
+    margin-top: 0px;
+    background-color: #1e1f24; /* Darker background for the form container */
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 500px; /* Max width for the form */
+    height: 95vh;
+    padding-top:2rem;
+}
+
+.logo-link img {
+    filter: brightness(0.9); /* Slightly adjust logo for dark background */
+}
+#logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+#logo img{
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+}
+
+.signup-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Form field styling */
+.form-label {
+    color: #e0e0e0;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    background-color: #2a2c31;
+    border: 1px solid #3d3f45;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #2a2c31; /* Keep dark background on focus */
+    color: #ffffff;
+    border-color: #f47521; /* Orange border on focus */
+    box-shadow: 0 0 0 0.25rem rgba(244, 117, 33, 0.25); /* Orange glow */
+}
+
+/* Placeholder color */
+.form-control::placeholder {
+    color: #a0a0a0;
+    opacity: 0.8;
+}
+
+/* Input group for password toggle */
+.input-group .form-control {
+    border-right: none; /* Blend with button */
+}
+
+.toggle-password {
+    background-color: #2a2c31;
+    border: 1px solid #3d3f45;
+    border-left: none;
+    color: #a0a0a0;
+    border-radius: 0 8px 8px 0; /* Rounded only on right side */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #f47521;
+    background-color: #3d3f45;
+}
+
+/* Custom primary button (reusing .btn-primary-custom from main CSS) */
+.btn-primary-custom.btn-lg {
+    padding: 0.8rem 1.5rem;
+    
+    font-size: 1.1rem;
+    border-radius: 8px; /* Slightly less rounded than hero CTA */
+    /* background:linear-gradient(45deg,purple,Orange,purple); */
+    background:  #f47521;
+    transition: all 0.3s linear 0s;
+}
+.btn-lg:hover{
+    transform: translateY(-5px);
+}
+
+.form-text, .invalid-feedback {
+    font-size: 0.875rem;
+}
+
+.invalid-feedback {
+    color: #ff4d4f; /* A strong red for error messages */
+}
+
+.form-divider {
+    border-color: #3d3f45;
+}
+
+.orange-link {
+    color: #f47521;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.orange-link:hover {
+    color: #ff8c40;
+    text-decoration: underline;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 576px) {
+    .signup-container {
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .signup-title {
+        font-size: 1.75rem;
+    }
+}
