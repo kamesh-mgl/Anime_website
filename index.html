@@ -1,9 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniStream - Watch Your Favorite Anime</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top scrolled-nav">
+            <div id="logo" class="container">
+                <a class="navbar-brand" href="#">
+                    <img id="nav-logo m-0" src="./Assets/only_logo.png" alt="AniStream Logo" height="30" style="background: black;">
+                </a>
+                <div class="collapse navbar-collapse ms-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-0 p-0">
+                            <a class="nav-link" href="#" style="color: #f47521;">AniStream</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Browse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Manga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Games</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center">
+                    <!-- <a href="#" class="btn btn-login me-3">Login</a> -->
+                    <a href="#" class="btn btn-primary-custom">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container text-center hero-content">
+                <h1 class="hero-title">Explore Your Next Favorite Anime.</h1>
+                <p class="hero-subtitle">Stream the world’s largest anime library. Ad-free, new episodes one hour after Japan, and more.</p>
+                <a href="#" class="btn btn-cta">GET STARTED</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="section-title">About AniStream</h2>
+                        <p>AniStream is your ultimate destination for watching the best and latest anime from Japan. Our mission is to connect anime fans everywhere with the content they love. From action-packed adventures to heartwarming slice-of-life stories, we have it all.</p>
+                        <p>Join our community and dive into a universe of endless entertainment, available on all your favorite devices.</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="./Assets/only_logo.png" class="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-5 bg-dark">
+            <div class="container text-center">
+                <h2 class="section-title mb-5">Why You'll Love Us</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <i class="fas fa-tv fa-3x mb-3"></i>
+                            <h3>Stream on Any Device</h3>
+                            <p>Watch on your TV, computer, mobile phone, and tablet.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <i class="fas fa-bolt fa-3x mb-3"></i>
+                            <h3>Simulcasts from Japan</h3>
+                            <p>Get new episodes just one hour after they air in Japan.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <i class="fas fa-download fa-3x mb-3"></i>
+                            <h3>Offline Viewing</h3>
+                            <p>Download your favorite episodes to watch on the go.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trending" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center">Trending Now</h2>
+                <div class="trending-grid">
+                    <div class="anime-card">
+                        <img src="https://wallpapercave.com/wp/wp8936526.jpg" alt="Anime Title 1">
+                        <div class="card-overlay">
+                            <h5 class="card-title">Jujutsu Kaisen</h5>
+                            <p class="card-text">Action, Supernatural</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/258/731/779/sousou-no-frieren-anime-portrait-display-anime-girls-anime-boys-hd-wallpaper-preview.jpg" alt="Anime Title 2">
+                        <div class="card-overlay">
+                            <h5 class="card-title">Frieren: Beyond Journey's End</h5>
+                            <p class="card-text">Adventure, Fantasy</p>
+                        </div>
+                    </div>
+                    <div class="anime-card">
+                        <img id="one-piece-img" src="https://c4.wallpaperflare.com/wallpaper/650/6/534/anime-one-piece-brook-one-piece-franky-one-piece-wallpaper-preview.jpg" alt="Anime Title 3">
+                        <div class="card-overlay">
+                            <h5 class="card-title">One Piece</h5>
+                            <p class="card-text">Action, Adventure</p>
+                        </div>
+                    </div>
+                     <div class="anime-card">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/862/758/376/solo-leveling-sung-jin-woo-hd-wallpaper-preview.jpg" alt="Anime Title 4">
+                        <div class="card-overlay">
+                            <h5 class="card-title">Solo Leveling</h5>
+                            <p class="card-text">Action, Fantasy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-4">
+        <div class="container text-center">
+            <div class="social-icons mb-3">
+                <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2025 AniStream. All Rights Reserved. This is a fictional clone for educational purposes.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
+    <script src="script.js"></script>
 </body>
 </html>
